@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JokeBook</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="random-joke">
+        <p><strong>Random Joke:</strong> <span id="random-joke-text"></span></p>
+      </div>
+
+      <div id="new-joke-form">
+        <h2>Add a New Joke</h2>
+        <form id="joke-form">
+          <select id="category-select">
+            <option value="funnyJoke">Funny Joke</option>
+            <option value="lameJoke">Lame Joke</option>
+          </select>
+          <textarea id="setup" placeholder="Joke setup" required></textarea>
+          <textarea id="delivery" placeholder="Joke delivery"
+            required></textarea>
+          <button type="submit">Add Joke</button>
+        </form>
+      </div>
+    </div>
+
+    <h1>Jokes</h1>
+
+    <div class="category-buttons">
+      <button id="funnyJokeBtn" class="category-btn">Funny Joke</button>
+      <button id="lameJokeBtn" class="category-btn">Lame Joke</button>
+    </div>
+
+    <div class="jokes">
+      <div id="jokes-list">
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </html>
